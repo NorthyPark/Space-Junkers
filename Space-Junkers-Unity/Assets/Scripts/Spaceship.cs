@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Spaceship : MonoBehaviour {
 
+    GameObject a,b;
     Rigidbody2D rb;
+    public GameObject bullet;
 
     public float speed;
     public int health = 3;
@@ -14,14 +16,17 @@ public class Spaceship : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Start () {
-		
-	}
-	
-	void Update ()
+    void Start() {
+
+    }
+
+    void Update()
     {
         rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
-        rb.AddForce(new Vector2(0,Input.GetAxis("Vertical") * speed));
+        rb.AddForce(new Vector2(0, Input.GetAxis("Vertical") * speed));
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            Shoot();
     }
 
     public void Damage()
@@ -29,6 +34,12 @@ public class Spaceship : MonoBehaviour {
         health--;
         if (health == 0)
             Destroy(gameObject);
+    }
+
+    void Shoot()
+    {
+        Instantiate(bullet, a.transform.position, Quaternion.identity);
+        Instantiate(bullet, b.transform.position, Quaternion.identity);
     }
  
 }

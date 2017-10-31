@@ -43,4 +43,11 @@ public class Enemies : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
+    void Damage()
+    {
+        health--;
+        if (health == 0)
+            Die();
+    }
 }
