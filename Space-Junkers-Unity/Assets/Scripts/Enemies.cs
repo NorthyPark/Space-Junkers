@@ -35,13 +35,12 @@ public class Enemies : MonoBehaviour {
     {
         if (col.gameObject.tag == "Players")
         {
-            col.gameObject.GetComponent<PlayerShip>().Damage();
+            col.gameObject.GetComponent<Spaceship>().Damage();
+            Die();
         }
-
+    }
     void Die()
         {
             Destroy(gameObject);
         }
-    }
-
 }
