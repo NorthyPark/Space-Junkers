@@ -7,6 +7,7 @@ public class Spaceship : MonoBehaviour {
     Rigidbody2D rb;
 
     public float speed;
+    public int health = 3;
 
     private void Awake()
     {
@@ -17,8 +18,17 @@ public class Spaceship : MonoBehaviour {
 		
 	}
 	
-	void Update () {
+	void Update ()
+    {
         rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
         rb.AddForce(new Vector2(0,Input.GetAxis("Vertical") * speed));
     }
+
+    public void Damage()
+    {
+        health--;
+        if (health == 0)
+            Destroy(gameObject);
+    }
+ 
 }
