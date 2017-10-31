@@ -1,7 +1,7 @@
-# Space-Junkers
+﻿# Space-Junkers
 
 The team behind Salaryman Studios:
 
 Grand master Eivind
 Some awesome guy Sindre
-the newbee Vebjørn
+And the one that everyone loves... Vebjørn the king <3<3<3<3<3<3<3 :P
