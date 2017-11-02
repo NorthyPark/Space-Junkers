@@ -15,6 +15,9 @@ public class ScrollUV : MonoBehaviour {
 
 		offset.x += Time.deltaTime / parralax;
 		offset.y += Time.deltaTime / parralax;
+
+
+
 		mat.mainTextureOffset = offset;
 
 	}

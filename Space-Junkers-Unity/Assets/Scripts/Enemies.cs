@@ -49,6 +49,7 @@ public class Enemies : MonoBehaviour {
         Instantiate(explotion, transform.position, Quaternion.identity);
         PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + score);
             Destroy(gameObject);
+		SoundManagerScript.PlaySound ("enemyDeath");
         }
 
     public void Damage()
@@ -62,5 +63,6 @@ public class Enemies : MonoBehaviour {
     {
         GameObject temp = (GameObject)Instantiate(bullet, transform.position, Quaternion.identity);
         temp.GetComponent<BulletScript>().ChangeDirection();
+		SoundManagerScript.PlaySound ("enemyShoot");
     }
 }

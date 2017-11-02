@@ -8,15 +8,21 @@ public class Spaceship : MonoBehaviour {
     GameObject a,b;
     Rigidbody2D rb;
     public GameObject bullet,explotion;
+	public AudioClip explosionDeath;
 
     public float speed;
     public int health = 3;
+
+	private AudioSource source;
+
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         a = transform.Find("a").gameObject;
         b = transform.Find("b").gameObject;
+		source = GetComponent<AudioSource> ();
+
     }
 
     void Start()
@@ -29,22 +35,32 @@ public class Spaceship : MonoBehaviour {
         rb.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
         rb.AddForce(new Vector2(0, Input.GetAxis("Vertical") * speed));
 
-        if (Input.GetKey(KeyCode.Space)&&delay>10)
-            Shoot();
+		if (Input.GetKey (KeyCode.Space) && delay > 10)
+			Shoot ();
+		
+	
+		
 
         delay++;
     }
 
     public void Damage()
     {
-        health--;
+		SoundManagerScript.PlaySound ("entetyHit");
+		health--;
         PlayerPrefs.SetInt("Health", health);
         StartCoroutine(Blink());
-        if (health == 0)
+		if (health == 0)
         {
-            Instantiate(explotion, transform.position, Quaternion.identity);
-            Destroy(gameObject, 0.1f);
+			SoundManagerScript.PlaySound ("playerDeath");
+
+			Instantiate(explotion, transform.position, Quaternion.identity);
+            Destroy(gameObject, .1f);
         }
+
+			
+
+
     }
 
     IEnumerator Blink()
@@ -56,7 +72,8 @@ public class Spaceship : MonoBehaviour {
 
     void Shoot()
     {
-        delay = 0;
+		SoundManagerScript.PlaySound ("playerShoot");
+		delay = 0;
         Instantiate(bullet, a.transform.position, Quaternion.identity);
         Instantiate(bullet, b.transform.position, Quaternion.identity);
     }

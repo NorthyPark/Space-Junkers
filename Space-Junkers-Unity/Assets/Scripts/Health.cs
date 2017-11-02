@@ -9,5 +9,6 @@ public class Health : MonoBehaviour {
         if (col.gameObject.tag == "Players")
             col.gameObject.GetComponent<Spaceship>().AddHealth();
             Destroy(gameObject);
+		SoundManagerScript.PlaySound ("heal");
     }
 }

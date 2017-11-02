@@ -81,7 +81,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -21.15, y: 0}
+  m_Offset: {x: -23.5, y: 3.2775354}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -92,7 +92,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 20}
+  m_Size: {x: 1, y: 12.17507}
   m_EdgeRadius: 0
 --- !u!61 &61733251111476296
 BoxCollider2D:
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2.23, y: 3.2061415}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -142,7 +142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 20}
+  m_Size: {x: 1, y: 12.272284}
   m_EdgeRadius: 0
 --- !u!114 &114110212140734654
 MonoBehaviour:
@@ -155,8 +155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ac32311d8dfa04d88a055f37b1c28d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 1
+  rate: 2
   enemies:
   - {fileID: 1814937380714136, guid: e312e45df69dc074e8869ea4caa355c4, type: 2}
   - {fileID: 1904520812267618, guid: 8efd9555f19f9b144b173d360e0c8032, type: 2}
-  waves: 2
+  - {fileID: 1244812479217192, guid: 483f154ff6109d447bc02c58b1c90584, type: 2}
+  - {fileID: 1621142192548400, guid: 54fe6cccf9060c44da10c34579545ea7, type: 2}
+  - {fileID: 1409552728469336, guid: 9f09a3bfd86a1f649ac9853d695d3e38, type: 2}
+  - {fileID: 1054906193086952, guid: 66ae8b3db46fbff41bf4e46a970aee8c, type: 2}
+  - {fileID: 1054906193086952, guid: d9e5fabe326f3f54084ededd2cab36ff, type: 2}
+  waves: 1
