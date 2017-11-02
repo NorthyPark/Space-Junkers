@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212763140424760994}
   - component: {fileID: 60973388835489600}
   - component: {fileID: 114926249945595370}
+  - component: {fileID: 95925845020018220}
   m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
@@ -58,7 +59,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 2.5}
+    oldSize: {x: 1.81, y: 3.55}
     newSize: {x: 2.5, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -74,6 +75,23 @@ PolygonCollider2D:
       - {x: 0.94426143, y: 1.0668547}
       - {x: 0.03712018, y: 1.2022223}
       - {x: -0.8805576, y: 1.0692595}
+--- !u!95 &95925845020018220
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1843777957244218}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ec34a843bbf9d144918ef7287dde94a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114926249945595370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 43009986143402e47ac32a59fe2a249b, type: 3}
+  m_Sprite: {fileID: 21300014, guid: ee2b74a32ec6e7c42b2397b683496441, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

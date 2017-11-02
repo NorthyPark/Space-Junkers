@@ -1,20 +1,25 @@
 fileFormatVersion: 2
-guid: f1f3fb426fdaec6498c3daead25a7803
-timeCreated: 1509624910
+guid: ee2b74a32ec6e7c42b2397b683496441
+timeCreated: 1509647050
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sprite_sheet_0
-    21300002: sprite_sheet_1
-    21300004: sprite_sheet_2
-    21300006: sprite_sheet_3
-    21300008: sprite_sheet_4
-    21300010: sprite_sheet_5
-    21300012: sprite_sheet_6
-    21300014: sprite_sheet_7
-    21300016: sprite_sheet_8
-    21300018: sprite_sheet_9
-    21300020: sprite_sheet_10
+    21300000: sprite sheet_0
+    21300002: sprite sheet_1
+    21300004: sprite sheet_2
+    21300006: sprite sheet_3
+    21300008: sprite sheet_4
+    21300010: sprite sheet_5
+    21300012: sprite sheet_6
+    21300014: sprite sheet_7
+    21300016: sprite sheet_8
+    21300018: sprite sheet_9
+    21300020: sprite sheet_10
+    21300022: sprite sheet_11
+    21300024: sprite sheet_12
+    21300026: sprite sheet_13
+    21300028: sprite sheet_14
+    21300030: sprite sheet_15
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -41,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -69,7 +74,7 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,15 +82,7 @@ TextureImporter:
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,13 +91,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_sheet_0
+      name: sprite sheet_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 133
-        width: 42
-        height: 54
+        x: 435
+        y: 4313
+        width: 761
+        height: 1162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,13 +105,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_1
+      name: sprite sheet_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 133
-        width: 41
-        height: 54
+        x: 1260
+        y: 4313
+        width: 768
+        height: 1174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,13 +119,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_2
+      name: sprite sheet_2
       rect:
         serializedVersion: 2
-        x: 223
-        y: 175
-        width: 203
-        height: 156
+        x: 4123
+        y: 3222
+        width: 3725
+        height: 2875
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,13 +133,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_3
+      name: sprite sheet_3
       rect:
         serializedVersion: 2
-        x: 499
-        y: 198
-        width: 105
-        height: 111
+        x: 9202
+        y: 3605
+        width: 1853
+        height: 2041
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,13 +147,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_4
+      name: sprite sheet_4
       rect:
         serializedVersion: 2
-        x: 222
-        y: 13
-        width: 124
-        height: 129
+        x: 1473
+        y: 3824
+        width: 257
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,13 +161,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_5
+      name: sprite sheet_5
       rect:
         serializedVersion: 2
-        x: 354
-        y: 113
-        width: 6
-        height: 28
+        x: 422
+        y: 2453
+        width: 768
+        height: 984
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,13 +175,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_6
+      name: sprite sheet_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 11
-        width: 138
-        height: 143
+        x: 1292
+        y: 2453
+        width: 768
+        height: 997
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,13 +189,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_7
+      name: sprite sheet_7
       rect:
         serializedVersion: 2
-        x: 10
-        y: 9
-        width: 58
-        height: 92
+        x: 2539
+        y: 2181
+        width: 181
+        height: 355
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,13 +203,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_8
+      name: sprite sheet_8
       rect:
         serializedVersion: 2
-        x: 74
-        y: 8
-        width: 58
-        height: 93
+        x: 2792
+        y: 2181
+        width: 178
+        height: 358
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,13 +217,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_9
+      name: sprite sheet_9
       rect:
         serializedVersion: 2
-        x: 137
-        y: 7
-        width: 59
-        height: 94
+        x: 4088
+        y: 229
+        width: 2288
+        height: 2389
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,13 +231,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sprite_sheet_10
+      name: sprite sheet_10
       rect:
         serializedVersion: 2
-        x: 552
-        y: 26
-        width: 113
-        height: 100
+        x: 6524
+        y: 2076
+        width: 112
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 7059
+        y: 201
+        width: 2567
+        height: 2632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 162
+        width: 1066
+        height: 1695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 143
+        width: 1071
+        height: 1714
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 124
+        width: 1072
+        height: 1733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 10168
+        y: 434
+        width: 2224
+        height: 1903
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
