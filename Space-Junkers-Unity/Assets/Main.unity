@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 985785835}
   - component: {fileID: 985785834}
   - component: {fileID: 985785833}
+  - component: {fileID: 985785837}
   m_Layer: 0
   m_Name: Spacefield-back
   m_TagString: Untagged
@@ -253,6 +254,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 985785831}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &985785837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985785831}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9794856f70a7b424e80c2db39a53d999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parralax: 2
 --- !u!1 &1151364149
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +395,7 @@ GameObject:
   - component: {fileID: 1519351782}
   - component: {fileID: 1519351781}
   - component: {fileID: 1519351780}
+  - component: {fileID: 1519351784}
   m_Layer: 0
   m_Name: Spacefield-Front
   m_TagString: Untagged
@@ -469,6 +483,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1519351778}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1519351784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1519351778}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9794856f70a7b424e80c2db39a53d999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parralax: 2
 --- !u!1001 &1550697334
 Prefab:
   m_ObjectHideFlags: 0
@@ -478,11 +504,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4124702898678846, guid: 6372aeaf58fef8845b8e2d0599067a83, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.56
+      value: 8.82
       objectReference: {fileID: 0}
     - target: {fileID: 4124702898678846, guid: 6372aeaf58fef8845b8e2d0599067a83, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.27
+      value: -5.06
       objectReference: {fileID: 0}
     - target: {fileID: 4124702898678846, guid: 6372aeaf58fef8845b8e2d0599067a83, type: 2}
       propertyPath: m_LocalPosition.z
@@ -507,6 +533,14 @@ Prefab:
     - target: {fileID: 4124702898678846, guid: 6372aeaf58fef8845b8e2d0599067a83, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124702898678846, guid: 6372aeaf58fef8845b8e2d0599067a83, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124702898678846, guid: 6372aeaf58fef8845b8e2d0599067a83, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6372aeaf58fef8845b8e2d0599067a83, type: 2}
@@ -579,6 +613,7 @@ GameObject:
   - component: {fileID: 1736124114}
   - component: {fileID: 1736124113}
   - component: {fileID: 1736124112}
+  - component: {fileID: 1736124116}
   m_Layer: 0
   m_Name: meteor
   m_TagString: Untagged
@@ -610,7 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e49158f3c982d4da58e11d92a9786c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parralax: 20
+  parralax: 25
 --- !u!23 &1736124113
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -666,6 +701,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1736124110}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1736124116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1736124110}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9794856f70a7b424e80c2db39a53d999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parralax: 2
 --- !u!4 &1839105688 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4513348688038502, guid: 7902b3370c4e3e64994b55c78746a5c3,
@@ -724,6 +771,11 @@ Prefab:
         type: 2}
       propertyPath: m_BackGroundColor.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20345113984704890, guid: 7902b3370c4e3e64994b55c78746a5c3,
+        type: 2}
+      propertyPath: orthographic size
+      value: 5.148189
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7902b3370c4e3e64994b55c78746a5c3, type: 2}
