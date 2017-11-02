@@ -5,12 +5,15 @@ using UnityEngine;
 public class Enemies : MonoBehaviour {
 
     Rigidbody2D rb;
+    public GameObject bullet,explotion, healthPick;
+    public Color bulletColor;
 
     public float xSpeed;
     public float ySpeed;
     public float fireRate;
     public float health;
     public bool canShoot;
+    public int score;
 
     private void Awake()
     {
@@ -19,10 +22,10 @@ public class Enemies : MonoBehaviour {
 
     void Start()
     {
-
-
-
-
+        Destroy(gameObject, 10);
+        if (!canShoot) return;
+        fireRate = fireRate + (Random.Range(fireRate / -2, fireRate / 2));
+            InvokeRepeating("Shoot", fireRate, fireRate);
     }
 
 
@@ -41,13 +44,23 @@ public class Enemies : MonoBehaviour {
     }
     void Die()
         {
+        if((int)Random.Range(0,4)==0)
+            Instantiate(healthPick, transform.position, Quaternion.identity);
+        Instantiate(explotion, transform.position, Quaternion.identity);
+        PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + score);
             Destroy(gameObject);
         }
 
-    void Damage()
+    public void Damage()
     {
         health--;
         if (health == 0)
             Die();
+    }
+
+    void Shoot()
+    {
+        GameObject temp = (GameObject)Instantiate(bullet, transform.position, Quaternion.identity);
+        temp.GetComponent<BulletScript>().ChangeDirection();
     }
 }

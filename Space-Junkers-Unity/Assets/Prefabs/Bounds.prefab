@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61546527012945998}
   - component: {fileID: 61373825980350488}
   - component: {fileID: 61733251111476296}
+  - component: {fileID: 114110212140734654}
   m_Layer: 8
   m_Name: Bounds
   m_TagString: Untagged
@@ -37,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1206241436168660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.56, y: -3.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.82, y: -5.06, z: 0}
+  m_LocalScale: {x: 0.75, y: 1.01, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -143,3 +144,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 20}
   m_EdgeRadius: 0
+--- !u!114 &114110212140734654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1206241436168660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ac32311d8dfa04d88a055f37b1c28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 1
+  enemies:
+  - {fileID: 1814937380714136, guid: e312e45df69dc074e8869ea4caa355c4, type: 2}
+  - {fileID: 1904520812267618, guid: 8efd9555f19f9b144b173d360e0c8032, type: 2}
+  waves: 2
