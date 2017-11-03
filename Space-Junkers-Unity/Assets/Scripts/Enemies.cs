@@ -22,7 +22,7 @@ public class Enemies : MonoBehaviour {
 
     void Start()
     {
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 40);
         if (!canShoot) return;
         fireRate = fireRate + (Random.Range(fireRate / -2, fireRate / 2));
             InvokeRepeating("Shoot", fireRate, fireRate);
