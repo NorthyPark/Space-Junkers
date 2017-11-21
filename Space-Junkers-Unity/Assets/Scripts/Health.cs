@@ -7,8 +7,10 @@ public class Health : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Players")
+        {
             col.gameObject.GetComponent<Spaceship>().AddHealth();
             Destroy(gameObject);
-		SoundManagerScript.PlaySound ("heal");
+            SoundManagerScript.PlaySound("heal");
+        }
     }
 }
